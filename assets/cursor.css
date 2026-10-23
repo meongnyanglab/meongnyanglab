@@ -1,0 +1,11 @@
+/* Native cursor images stay small and do not affect touch interactions. */
+@media (hover: hover) and (pointer: fine) {
+  html, body { cursor: url("paw-cursor.svg") 16 8, auto; }
+  body a, body button, body summary, body select, body label,
+  body input[type="checkbox"], body input[type="radio"], body [role="button"] {
+    cursor: url("paw-pointer.svg") 16 8, pointer !important;
+  }
+  body input:not([type="checkbox"]):not([type="radio"]), body textarea,
+  body [contenteditable="true"] { cursor: text; }
+  body button:disabled, body input:disabled, body select:disabled { cursor: not-allowed !important; }
+}
