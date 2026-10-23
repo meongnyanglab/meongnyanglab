@@ -20,7 +20,7 @@ body{font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;color:var
 .notice{background:#1A1A1A;color:#fff;text-align:center;font-size:15px;height:35px;line-height:35px}
 /* 히어로 + 헤더 겹침 */
 .hero{position:relative;height:656px;background:var(--beige)}
-.hero .bg{position:absolute;inset:0}.hero .bg .ph{background:#EDE3D6}
+.hero .bg{position:absolute;inset:0;background:#EDE3D6}.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center}
 .hd{position:absolute;left:0;right:0;top:0;z-index:5}
 .hd .in{display:grid;grid-template-columns:1fr auto;padding-top:24px}
 .hd .logo{font-weight:800;font-size:20px;letter-spacing:.02em}
@@ -88,7 +88,9 @@ body{font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;color:var
 .ft b{display:block;color:var(--ink);font-size:17px;margin-bottom:10px}.ft .tel{font-size:24px;font-weight:700;color:var(--ink)}
 .ft a{display:block}
 @media (max-width:860px){
+  .hero .bg img{height:auto;position:absolute;top:100px;object-fit:contain}
   .in{padding:0 16px}.hd nav{font-size:15px;gap:16px}.hd .s{display:none}.hero{height:520px}.hero .copy{left:16px;right:16px;bottom:90px}.hero .copy h1{font-size:30px}.hero .bar{left:16px;right:16px}
+  .hero{height:calc(440px + 100vw / 3)}.hd nav{grid-column:1/-1;white-space:nowrap}
   .best{grid-template-columns:1fr}.best .row,.grid4{grid-template-columns:repeat(2,1fr)}.best .row a:nth-child(n+3){display:none}
   .wide{grid-template-columns:1fr;height:auto}.wide .t{padding:30px 16px}.wide .p{height:200px}
   .md{grid-template-columns:1fr}.md .big{height:280px}.duo{grid-template-columns:1fr}.duo b{font-size:30px}
@@ -109,7 +111,7 @@ body{font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;color:var
     <nav><a href="#best">ALL</a><a href="#best">강아지</a><a href="#best">고양이</a><a href="#review">리뷰</a></nav>
     <div class="s"><span>⌕</span><span style="width:auto;border:0">🛍</span></div>
   </div></header>
-  <div class="bg"><div class="ph "><span><span class="todo">반려견·반려묘 옆 급식기 연출 컷 (와이드 배너)</span></span></div></div>
+  <div class="bg"><img src="assets/hero-pets-feeder.png" alt="햇살이 드는 거실에서 스마트 자동급식기 옆에 앉아 있는 흰 강아지와 고양이" width="2172" height="724" fetchpriority="high"></div>
   <div class="copy"><small>스마트 자동급식기</small><h1>일상은 바빠도<br>식사는 늘 제시간에</h1><p>그냥 밥만 주는 급식기가 아니라, 아이별로 챙기고 먹었는지까지 확인해요.</p><a href="#apply" id="cta-main">사전 구매 신청</a></div>
   <div class="bar"><i></i><span>1 / 2</span></div>
 </section>
