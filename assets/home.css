@@ -29,3 +29,10 @@
 .smart-banner{aspect-ratio:auto;background:none;overflow:visible}
 .smart-banner::before,.smart-banner::after{display:none}
 .smart-banner>img{display:block;width:100%;max-width:2128px;height:auto;margin-inline:auto;filter:none}
+
+/* Align banners with the page content and keep the complete images visible. */
+.smart-banner,.closing{width:min(1180px,calc(100% - 72px));margin-inline:auto}
+.comparison thead th{width:33.333%}
+.features .feature-image{aspect-ratio:1.5;height:auto}
+@media(max-width:900px){.smart-banner,.closing{width:calc(100% - 40px)}}
+@media(max-width:600px){.smart-banner,.closing{width:calc(100% - 32px)}.features .feature-image{height:140px;aspect-ratio:auto}}
