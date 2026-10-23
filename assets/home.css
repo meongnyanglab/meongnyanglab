@@ -44,3 +44,15 @@
 .smart-cta{position:absolute;left:6.5%;bottom:10%;padding:9px 23px;font-size:14px;border-radius:9px}
 @media(max-width:900px){.smart-cta{padding:6px 16px;font-size:12px;bottom:8%}}
 @media(max-width:600px){.smart-cta{position:static;display:flex;width:max-content;margin:12px auto 0;padding:9px 20px;font-size:13px}}
+
+/* Keep navigation close to the brand while tools stay at the right edge. */
+.header-inner{justify-content:flex-start}
+.header nav{margin-left:40px;gap:42px;white-space:nowrap}
+.header .tools{margin-left:auto}
+.reviews{padding-top:35px;padding-bottom:20px}
+.reviews-empty{text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 20px}
+.reviews-empty p{font-size:18px;font-weight:650}
+.reviews-empty>span{display:block;color:var(--muted);font-size:14px;margin:8px 0 18px}
+.reviews-empty .button{padding:9px 23px;font-size:14px}
+@media(max-width:900px){.header nav{margin-left:16px;gap:24px}}
+@media(max-width:600px){.header nav{margin-left:0;justify-content:flex-start;gap:0}.header nav a{flex:1;text-align:center}.reviews{padding-top:25px}.reviews-empty p{font-size:16px}.reviews-empty>span{font-size:13px}}
