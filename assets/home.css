@@ -31,8 +31,11 @@
 .smart-banner>img{display:block;width:100%;max-width:2128px;height:auto;margin-inline:auto;filter:none}
 
 /* Align banners with the page content and keep the complete images visible. */
-.smart-banner,.closing{width:min(1180px,calc(100% - 72px));margin-inline:auto}
+.smart-banner,.closing{width:min(590px,calc(50% - 36px));margin-inline:auto}
 .comparison thead th{width:33.333%}
 .features .feature-image{aspect-ratio:1.5;height:auto}
-@media(max-width:900px){.smart-banner,.closing{width:calc(100% - 40px)}}
-@media(max-width:600px){.smart-banner,.closing{width:calc(100% - 32px)}.features .feature-image{height:140px;aspect-ratio:auto}}
+@media(max-width:900px){.smart-banner,.closing{width:calc(50% - 20px)}}
+@media(max-width:600px){.smart-banner,.closing{width:calc(50% - 16px)}.features .feature-image{height:140px;aspect-ratio:auto}}
+
+.comparison table{table-layout:fixed}
+.comparison thead th,.comparison tbody td{width:33.333%}
