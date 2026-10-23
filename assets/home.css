@@ -18,8 +18,13 @@
 .smart-copy p{font-size:clamp(14px,1.55vw,21px)}
 .feature-image.camera{background:#e9dfcf;overflow:hidden;aspect-ratio:1.5;height:auto}
 .feature-image.camera img{width:100%;height:100%;object-fit:contain;object-position:center}
-.closing{height:250px;padding:0;background-image:url('hero-pets-feeder.png');background-size:cover;background-position:right 47%}
+.closing{height:auto;padding:0;background:none}
+.closing img{display:block;width:100%;height:auto}
 .closing:before{display:none}
 @media(max-width:900px) and (min-width:601px){.smart-copy{flex-basis:51%}.smart-copy h2{font-size:23px}.smart-copy p{font-size:14px}.smart-copy .pill{font-size:12px;padding:3px 14px}}
-@media(max-width:600px){.smart-banner{aspect-ratio:auto;background:#ede4d5}.smart-inner{height:auto;display:block;padding-top:25px;padding-bottom:0}.smart-copy{width:100%}.smart-copy h2{font-size:26px;max-width:100%;margin:13px 0 7px}.smart-copy p{font-size:15px}.smart-inner:after{content:"";display:block;margin-top:20px;width:100%;aspect-ratio:1.5;background:url('smart-banner.png') right center/auto 100% no-repeat}.feature-image.camera{height:140px;aspect-ratio:auto}.feature-image.camera img{object-fit:contain}.closing{height:180px;background-position:right center}}
-@media(min-width:601px){.closing{background-size:155% auto;background-position:right 48%}}
+@media(max-width:600px){.smart-banner{aspect-ratio:auto;background:#ede4d5}.smart-inner{height:auto;display:block;padding-top:25px;padding-bottom:0}.smart-copy{width:100%}.smart-copy h2{font-size:26px;max-width:100%;margin:13px 0 7px}.smart-copy p{font-size:15px}.smart-inner:after{content:"";display:block;margin-top:20px;width:100%;aspect-ratio:1.5;background:url('smart-banner.png') right center/auto 100% no-repeat}.feature-image.camera{height:140px;aspect-ratio:auto}.feature-image.camera img{object-fit:contain}}
+
+
+/* Deepen only the smart-banner photograph; keep the text unchanged. */
+@media(min-width:601px){.smart-banner{background-color:#e2ddd3;background-blend-mode:multiply}}
+@media(max-width:600px){.smart-inner:after{background-color:#e2ddd3;background-blend-mode:multiply}}
