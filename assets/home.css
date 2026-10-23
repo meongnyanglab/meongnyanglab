@@ -25,6 +25,7 @@
 @media(max-width:600px){.smart-banner{aspect-ratio:auto;background:#ede4d5}.smart-inner{height:auto;display:block;padding-top:25px;padding-bottom:0}.smart-copy{width:100%}.smart-copy h2{font-size:26px;max-width:100%;margin:13px 0 7px}.smart-copy p{font-size:15px}.smart-inner:after{content:"";display:block;margin-top:20px;width:100%;aspect-ratio:1.5;background:url('smart-banner.png') right center/auto 100% no-repeat}.feature-image.camera{height:140px;aspect-ratio:auto}.feature-image.camera img{object-fit:contain}}
 
 
-/* Deepen only the smart-banner photograph; keep the text unchanged. */
-@media(min-width:601px){.smart-banner{background-color:#e2ddd3;background-blend-mode:multiply}}
-@media(max-width:600px){.smart-inner:after{background-color:#e2ddd3;background-blend-mode:multiply}}
+/* Display the supplied finished banner without cropping, effects, or upscaling. */
+.smart-banner{aspect-ratio:auto;background:none;overflow:visible}
+.smart-banner::before,.smart-banner::after{display:none}
+.smart-banner>img{display:block;width:100%;max-width:2128px;height:auto;margin-inline:auto;filter:none}
