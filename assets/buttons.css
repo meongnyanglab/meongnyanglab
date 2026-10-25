@@ -1,0 +1,12 @@
+/* Warm beige actions with readable brown text across both pages. */
+:root{--action-bg:#ddc9b2;--action-hover:#ceb294;--action-ink:#49382b}
+.button,#lead-form .submit,.btn,.modal-actions .ok{
+  background:var(--action-bg);color:var(--action-ink);border:1px solid #bca78d;
+}
+.button:hover,#lead-form .submit:hover,.btn:hover,.modal-actions .ok:not(:disabled):hover{
+  background:var(--action-hover);color:var(--action-ink);
+}
+.button:focus-visible,#lead-form .submit:focus-visible,.btn:focus-visible,.modal-actions button:focus-visible{
+  outline:3px solid #94785c;outline-offset:4px;
+}
+.modal-actions .ok:disabled{opacity:.45}

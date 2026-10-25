@@ -74,3 +74,12 @@
 .comparison tbody th{white-space:nowrap;font-weight:600}
 .comparison tbody tr>*{height:58px;padding:15px 10px}
 @media(max-width:600px){.comparison tbody tr>*{height:46px;padding:12px 3px}.comparison thead th span{font-size:13px}.comparison .model-thumb{width:40px;height:40px}}
+
+/* Comparison layout from the supplied reference. */
+.comparison{padding:35px 25px 25px}
+.comparison h2{margin-bottom:32px}
+.comparison thead th{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.comparison .comparison-heading strong{display:block;font-size:22px;font-weight:750}
+.comparison .comparison-heading small{display:block;margin-top:4px;color:#899085;font-size:14px;font-weight:400}
+.comparison tbody th{background:#f2f3ed;font-size:18px;font-weight:650}
+@media(max-width:600px){.comparison{padding:25px 12px 15px}.comparison h2{margin-bottom:24px}.comparison .comparison-heading strong{font-size:14px}.comparison .comparison-heading small{font-size:10px;line-height:1.5;padding-inline:4px}.comparison tbody th{font-size:12px}}
