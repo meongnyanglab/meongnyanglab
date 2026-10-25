@@ -49,10 +49,19 @@
 .header-inner{justify-content:flex-start}
 .header nav{margin-left:40px;gap:42px;white-space:nowrap}
 .header .tools{margin-left:auto}
-.reviews{padding-top:35px;padding-bottom:20px}
-.reviews-empty{text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 20px}
-.reviews-empty p{font-size:18px;font-weight:650}
-.reviews-empty>span{display:block;color:var(--muted);font-size:14px;margin:8px 0 18px}
-.reviews-empty .button{padding:9px 23px;font-size:14px}
 @media(max-width:900px){.header nav{margin-left:16px;gap:24px}}
-@media(max-width:600px){.header nav{margin-left:0;justify-content:flex-start;gap:0}.header nav a{flex:1;text-align:center}.reviews{padding-top:25px}.reviews-empty p{font-size:16px}.reviews-empty>span{font-size:13px}}
+@media(max-width:600px){.header nav{margin-left:0;justify-content:flex-start;gap:0}.header nav a{flex:1;text-align:center}}
+
+.application{padding-top:36px;padding-bottom:36px}
+#lead-form{max-width:830px;padding:38px 42px 42px;background:#f2f8fb;border:1px solid #dcebf5;border-radius:26px;color:#062658}
+#lead-form h2{text-align:left;color:#062658;font-size:34px;margin-bottom:12px}
+#lead-form .application-note{text-align:left;color:#52749c;font-size:18px;margin-bottom:30px}
+#lead-form .field{margin-bottom:22px}
+#lead-form .field>span{font-size:20px;margin-bottom:10px}
+#lead-form .field input{padding:18px 21px;border:1px solid #c2d8eb;border-radius:12px;font-size:22px;color:#062658;min-width:0}
+#lead-form .field input:focus-visible{outline:3px solid #789cc8;outline-offset:2px}
+#lead-form .safe-note{background:#e6f0f5;color:#365c83;font-size:15px;padding:17px 20px;border-radius:12px;align-items:center}
+#lead-form .submit{display:flex;justify-content:space-between;align-items:center;background:#c4f414;color:#05265a;font-size:24px;font-weight:750;border-radius:20px;margin-top:24px;padding:17px 38px;min-height:80px}
+#lead-form .submit>span{font-size:40px;line-height:1}
+#lead-form .submit:hover{background:#b6e708}
+@media(max-width:600px){#lead-form{padding:25px 20px;border-radius:22px}#lead-form h2{font-size:28px}#lead-form .application-note{font-size:15px;margin-bottom:23px}#lead-form .field>span{font-size:17px}#lead-form .field input{font-size:18px;padding:15px}#lead-form .safe-note{padding:14px 12px;font-size:12px}#lead-form .submit{font-size:21px;padding:14px 22px;min-height:66px}#lead-form .submit>span{font-size:32px}}
