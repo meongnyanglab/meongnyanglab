@@ -65,3 +65,12 @@
 #lead-form .submit>span{font-size:40px;line-height:1}
 #lead-form .submit:hover{background:#b6e708}
 @media(max-width:600px){#lead-form{padding:25px 20px;border-radius:22px}#lead-form h2{font-size:28px}#lead-form .application-note{font-size:15px;margin-bottom:23px}#lead-form .field>span{font-size:17px}#lead-form .field input{font-size:18px;padding:15px}#lead-form .safe-note{padding:14px 12px;font-size:12px}#lead-form .submit{font-size:21px;padding:14px 22px;min-height:66px}#lead-form .submit>span{font-size:32px}}
+
+/* One shared column grid keeps headers, row labels, and values aligned. */
+.comparison table{table-layout:fixed;width:100%}
+.comparison col{width:26%}
+.comparison col.comparison-label{width:22%}
+.comparison thead th,.comparison thead td,.comparison tbody th,.comparison tbody td{width:auto;vertical-align:middle;text-align:center}
+.comparison tbody th{white-space:nowrap;font-weight:600}
+.comparison tbody tr>*{height:58px;padding:15px 10px}
+@media(max-width:600px){.comparison tbody tr>*{height:46px;padding:12px 3px}.comparison thead th span{font-size:13px}.comparison .model-thumb{width:40px;height:40px}}
