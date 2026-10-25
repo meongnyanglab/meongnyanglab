@@ -52,19 +52,19 @@
 @media(max-width:900px){.header nav{margin-left:16px;gap:24px}}
 @media(max-width:600px){.header nav{margin-left:0;justify-content:flex-start;gap:0}.header nav a{flex:1;text-align:center}}
 
-.application{padding-top:36px;padding-bottom:36px}
-#lead-form{max-width:830px;padding:38px 42px 42px;background:#f2f8fb;border:1px solid #dcebf5;border-radius:26px;color:#062658}
-#lead-form h2{text-align:left;color:#062658;font-size:34px;margin-bottom:12px}
-#lead-form .application-note{text-align:left;color:#52749c;font-size:18px;margin-bottom:30px}
-#lead-form .field{margin-bottom:22px}
-#lead-form .field>span{font-size:20px;margin-bottom:10px}
-#lead-form .field input{padding:18px 21px;border:1px solid #c2d8eb;border-radius:12px;font-size:22px;color:#062658;min-width:0}
-#lead-form .field input:focus-visible{outline:3px solid #789cc8;outline-offset:2px}
-#lead-form .safe-note{background:#e6f0f5;color:#365c83;font-size:15px;padding:17px 20px;border-radius:12px;align-items:center}
-#lead-form .submit{display:flex;justify-content:space-between;align-items:center;background:#c4f414;color:#05265a;font-size:24px;font-weight:750;border-radius:20px;margin-top:24px;padding:17px 38px;min-height:80px}
-#lead-form .submit>span{font-size:40px;line-height:1}
-#lead-form .submit:hover{background:#b6e708}
-@media(max-width:600px){#lead-form{padding:25px 20px;border-radius:22px}#lead-form h2{font-size:28px}#lead-form .application-note{font-size:15px;margin-bottom:23px}#lead-form .field>span{font-size:17px}#lead-form .field input{font-size:18px;padding:15px}#lead-form .safe-note{padding:14px 12px;font-size:12px}#lead-form .submit{font-size:21px;padding:14px 22px;min-height:66px}#lead-form .submit>span{font-size:32px}}
+.application{padding-top:30px;padding-bottom:30px}
+#lead-form{max-width:620px;padding:28px 30px;background:#f3f2ec;border:1px solid #dfe3d8;border-radius:18px;color:var(--ink)}
+#lead-form h2{text-align:left;color:var(--ink);font-size:27px;margin-bottom:8px}
+#lead-form .application-note{text-align:left;color:var(--muted);font-size:14px;margin-bottom:22px}
+#lead-form .field{margin-bottom:17px}
+#lead-form .field>span{font-size:16px;margin-bottom:7px}
+#lead-form .field input{padding:12px 15px;border:1px solid #ced5c8;border-radius:9px;font-size:17px;color:var(--ink);background:#fff;min-width:0}
+#lead-form .field input:focus-visible{outline:3px solid #839970;outline-offset:2px}
+#lead-form .safe-note{background:var(--sage);color:#4b5b48;font-size:12px;padding:12px 14px;border-radius:9px;align-items:center}
+#lead-form .submit{display:flex;justify-content:space-between;align-items:center;background:var(--primary);color:#fff;font-size:18px;font-weight:700;border-radius:10px;margin-top:18px;padding:12px 22px;min-height:54px}
+#lead-form .submit>span{font-size:28px;line-height:1}
+#lead-form .submit:hover{background:#51634d}
+@media(max-width:600px){#lead-form{padding:23px 20px;border-radius:16px}#lead-form h2{font-size:25px}#lead-form .application-note{font-size:13px;margin-bottom:20px}#lead-form .field input{font-size:16px}#lead-form .safe-note{padding:11px 12px}#lead-form .submit{font-size:17px;padding:12px 18px}}
 
 /* One shared column grid keeps headers, row labels, and values aligned. */
 .comparison table{table-layout:fixed;width:100%}
