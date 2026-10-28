@@ -119,3 +119,18 @@
 
 /* Align the three product action bars without changing mobile card layout. */
 @media(min-width:601px){.product{display:flex;flex-direction:column}.product-photo{flex:none}.product-info{display:flex;flex-direction:column;flex:1}.product-info .representative{align-self:center}.product-info strong{margin-top:auto}.product-info .button{margin-top:0}}
+
+/* Product section alignment only; badge overlays photo so it uses no text space. */
+#products>h2{width:100%;margin-inline:auto;text-align:center;padding-inline:12px;text-wrap:balance}
+#products .product-photo .representative{position:absolute;top:14px;left:14px;z-index:1;margin:0;padding:5px 11px;background:#e9dfd2ed;color:#514638;font-size:11px;line-height:1.5;max-width:calc(100% - 28px)}
+@media(min-width:601px){
+#products .products{align-items:stretch}
+#products .product-info{display:flex;flex-direction:column;align-items:stretch;text-align:center}
+#products .product-info h3{margin:0 0 8px;min-height:1.35em;display:flex;align-items:center;justify-content:center}
+#products .product-info>p{display:flex;align-items:center;justify-content:center;margin:0;line-height:1.6;min-height:2.8em}
+#products .product-info>.model-recommendation{margin:0;min-height:2.8em}
+#products .product-info>strong{margin:8px 0 16px}
+#products .product-info>.button{margin-top:auto}
+}
+@media(min-width:601px) and (max-width:900px){#products .product-info h3{min-height:2.7em}}
+@media(max-width:600px){#products .product-photo .representative{top:8px;left:8px;font-size:9px;padding:3px 7px;max-width:calc(100% - 16px)}}
