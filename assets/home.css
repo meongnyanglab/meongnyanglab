@@ -118,4 +118,4 @@
 @media(max-width:600px){.brand-intro{padding-block:28px 5px}.brand-intro p{font-size:13px}.hero h1{font-size:29px}.hero-model{font-size:11px;margin-bottom:14px}.product-info .model-recommendation{font-size:11px}.representative{font-size:9px}.detail-layout{grid-template-columns:1fr;gap:15px}#product-visual{max-width:280px;width:100%;margin:auto}.choice-group label{font-size:11px;padding:9px 6px}.smart-tag{white-space:nowrap}.comparison thead th span{font-size:12px}}
 
 /* Align the three product action bars without changing mobile card layout. */
-@media(min-width:601px){.product{display:flex;flex-direction:column}.product-photo{flex:none}.product-info{display:flex;flex-direction:column;flex:1}.product-info strong{margin-top:auto}.product-info .button{margin-top:0}}
+@media(min-width:601px){.product{display:flex;flex-direction:column}.product-photo{flex:none}.product-info{display:flex;flex-direction:column;flex:1}.product-info .representative{align-self:center}.product-info strong{margin-top:auto}.product-info .button{margin-top:0}}
