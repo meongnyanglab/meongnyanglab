@@ -2,7 +2,7 @@
   const models = {
     basic: ['멍냥랩 베이직', '예약 급여와 간편한 본체 설정. 한 아이의 규칙적인 식사를 위한 기본 모델입니다.', '59,000원'],
     dual: ['멍냥랩 듀얼', '두 개의 식기와 예약 급여. 함께 사는 아이들의 식사 시간을 챙기는 모델입니다.', '89,000원'],
-    smart: ['멍냥랩 스마트 듀얼', '두 아이의 식사 공간과 영상 확인을 함께. 식기 2개, 예약 급여, 앱 연동과 실시간 영상 기능을 갖춘 기획 모델입니다.', '가격 기획 중']
+    smart: ['멍냥랩 스마트 듀얼', '두 아이의 식사 공간과 영상 확인을 함께. 식기 2개, 예약 급여, 앱 연동과 실시간 영상 기능을 갖춘 기획 모델입니다.', '169,000원']
   };
   const dialog = document.querySelector('#product-dialog');
   document.querySelectorAll('[data-model]').forEach(button => button.addEventListener('click', () => {

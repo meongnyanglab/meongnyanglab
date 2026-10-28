@@ -2,7 +2,7 @@
   var models = {
     basic: { item_id: 'basic', item_name: '멍냥랩 베이직', price: 59000 },
     dual: { item_id: 'dual', item_name: '멍냥랩 듀얼', price: 89000 },
-    smart: { item_id: 'smart', item_name: '멍냥랩 스마트 듀얼' }
+    smart: { item_id: 'smart', item_name: '멍냥랩 스마트 듀얼', price: 169000 }
   };
   var selectedModel = '';
   document.querySelectorAll('[data-interest]').forEach(function (input) {
