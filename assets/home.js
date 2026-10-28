@@ -22,4 +22,19 @@
     section.querySelector('input').focus({preventScroll: true});
   });
   document.querySelector('[data-policy]').addEventListener('click', () => document.querySelector('#policy-dialog').showModal());
+  // Reveal once; keep all content visible without JS or when reduced motion is requested.
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.08});
+    document.querySelectorAll('.story, .section-heading, .product, .smart-inner, .features article').forEach(el => {
+      el.classList.add('reveal-ready');
+      observer.observe(el);
+    });
+  }
 })();
