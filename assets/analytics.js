@@ -12,6 +12,27 @@
   function track(name, params) {
     if (typeof window.gtag !== 'function') return;
     window.gtag('event', name, params || {});
+    if (name === 'page_view' || name.indexOf('scroll') !== -1) return;
+    var metaEventNames = {
+      generate_lead: 'Lead',
+      sign_up: 'CompleteRegistration',
+      contact_click: 'Contact',
+      view_item: 'ViewContent',
+      add_to_cart: 'AddToCart',
+      begin_checkout: 'InitiateCheckout',
+      search: 'Search'
+    };
+    if (name === 'purchase') {
+      if (window.fbq) fbq('track', 'Purchase', {
+        value: params && params.value,
+        currency: 'KRW'
+      });
+      return;
+    }
+    if (window.fbq) {
+      if (metaEventNames[name]) fbq('track', metaEventNames[name]);
+      else fbq('trackCustom', name);
+    }
   }
 
   function navigation(el, location, name) {
